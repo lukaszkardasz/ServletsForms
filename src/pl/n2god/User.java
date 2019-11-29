@@ -1,5 +1,7 @@
 package pl.n2god;
 
+import java.util.Arrays;
+
 /**
  * @author n2god on 29/11/2019
  * @project forms
@@ -50,5 +52,15 @@ public class User {
 
     public void setHobby(String[] hobby) {
         this.hobby = hobby;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", gender='" + gender + '\'' +
+                ", hobby=" + Arrays.toString(hobby) +
+                '}';
     }
 }

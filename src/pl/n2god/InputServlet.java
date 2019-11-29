@@ -37,7 +37,7 @@ public class InputServlet extends HttpServlet {
         writer.println("<html>");
         writer.println("<body>");
         writer.print("<h2>Dane odebrano pomyślnie</h2>");
-        writer.print("<div>");
+        writer.print("<div>" );
         writer.println(user.getUsername() + "<br>");
         writer.println(user.getPassword() + "<br>");
         writer.println(user.getGender() + "<br>");
